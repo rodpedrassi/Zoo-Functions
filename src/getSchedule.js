@@ -70,7 +70,10 @@ function getScheduleAllDays() {
       return isMonday();
     }
     return getScheduleByDay(dia);
-  });
+  }).reduce((acc, elemento) => {
+    const objeto = { ...acc, ...elemento };
+    return objeto;
+  }, {});
 }
 // function getScheduleAllDays() {
 //   const diasSemana = Object.keys(data.hours);
