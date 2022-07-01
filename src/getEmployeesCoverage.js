@@ -47,12 +47,20 @@ function generateObjEmployee(obj) {
   return employee;
 }
 
+// function getAllEmployeesCoverage() {
+//   const arrayEmployees = [];
+//   const tamanho = data.employees.length;
+//   for (let index = 0; index < tamanho; index += 1) {
+//     arrayEmployees.push(generateObjEmployee(data.employees[index]));
+//   }
+//   return arrayEmployees;
+// }
+
 function getAllEmployeesCoverage() {
   const arrayEmployees = [];
-  const tamanho = data.employees.length;
-  for (let index = 0; index < tamanho; index += 1) {
-    arrayEmployees.push(generateObjEmployee(data.employees[index]));
-  }
+  data.employees.forEach((employee) => {
+    arrayEmployees.push(generateObjEmployee(employee));
+  });
   return arrayEmployees;
 }
 
