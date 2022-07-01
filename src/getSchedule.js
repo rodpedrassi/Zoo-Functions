@@ -72,6 +72,9 @@ function getScheduleAllDays() {
     return getScheduleByDay(dia);
   });
 }
+// function getScheduleAllDays() {
+//   const diasSemana = Object.keys(data.hours);
+// }
 
 function getSchedule(scheduleTarget) {
   if (isAnimal(scheduleTarget)) {
