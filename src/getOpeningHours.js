@@ -58,4 +58,4 @@ const getOpeningHours = (day, dataHour) => {
 
 // console.log(getOpeningHours('quarta', 12));
 
-module.exports = { getOpeningHours };
+module.exports = getOpeningHours;
