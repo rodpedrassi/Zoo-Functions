@@ -1,9 +1,9 @@
 const data = require('../data/zoo_data');
 
-const options = { includeNames: true, sex: 'female', sorted: true };
+const opcoes = { includeNames: true, sex: 'female', sorted: true };
 
 function getAnimalMap(options) {
-  // seu código aqui
+  return opcoes;
 }
 
 module.exports = getAnimalMap;
