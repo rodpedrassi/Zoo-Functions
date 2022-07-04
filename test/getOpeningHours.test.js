@@ -1,4 +1,4 @@
-const { getOpeningHours } = require('../src/getOpeningHours');
+const getOpeningHours = require('../src/getOpeningHours');
 
 describe('Testes da função getOpeningHours', () => {
   it('Checa se getOpeningHours é uma função', () => {
